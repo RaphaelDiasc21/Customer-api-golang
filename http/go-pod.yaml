@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: goapp.first
+  labels:
+    app: web
+spec:
+  containers:
+  - name: goapp
+    image: raphaeldiasc/goapp
+    ports:
+    - containerPort: 8090
